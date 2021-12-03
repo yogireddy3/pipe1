@@ -1,11 +1,6 @@
 pipeline {
     agent any
-    stages{
-        stage 'checkout'{
-            steps{
-             sh 'echo iam checking '
-            }
-        }
+    stages {
         stage ('build') {
             steps{
               sh 'echo iam builder'
