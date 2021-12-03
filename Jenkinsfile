@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage 'checkout'{
             steps{
-
+             sh 'echo iam checking '
             }
         }
         stage ('build') {
