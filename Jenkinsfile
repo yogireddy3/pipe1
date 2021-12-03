@@ -5,14 +5,17 @@ pipeline {
             steps{
 
             }
-
+        }
         stage ('build') {
             steps{
               sh 'echo iam builder'
             }
+            
+            }
          stage ('test') {
             steps{
                 sh 'echo iam tester'
+               }
             }
          stage ('deploy') {
             steps{
@@ -21,8 +24,6 @@ pipeline {
                 
             }
         }
-        }
+        
     }
 }
-
-
